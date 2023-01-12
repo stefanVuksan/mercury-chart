@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Import apexcharts javaScript library-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <link rel="stylesheet" href="./chartcss.css">
+    
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="data-area">
+        <div>
+            <h2>Mercury Balance</h2>
+            <h1 >$ <span id="mercury-balance"></span></h1>
+        </div>
+        <div>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><polygon fill="#139305" points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"/></svg>$<span id="sum"></span></h2>
+            <select name="days" id="days">
+                <option value="1">Last 24 hours</option>
+                <option value="7">Last 7 days</option>
+                <option value="30">Last 30 days</option>
+                <option value="90">Last 90 days</option>
+                <option value="365">Last 365 days</option>
+                <option value="all">All time</option>
+            </select>
+        </div>
+    </div>
+    <div id="custom-area">
+    </div>
+  </body>
+  <script src="./chartjs.js"></script>
+</html>

@@ -1,1 +1,2 @@
-# mercury-chart
+# mercury-chart-widget
+ApexCharts
